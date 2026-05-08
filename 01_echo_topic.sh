@@ -7,3 +7,5 @@ echo "Hello World"
 echo -e "\e[91mHello World\e[0m"
 
 #third command echo with background color
+echo -e "\e[44mHello World\e[0m"
+
