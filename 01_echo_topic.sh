@@ -26,3 +26,14 @@ dnf install nginx 2> error.log
 
 dnf install nginx &> output.log
 
+#exit status of the last command
+# normal exit status is 0 and 255    
+#0 means success and 1 to 255 means failure
+#1-125 are used for application specific errors
+#126-255 are used for system errors
+
+echo "Hello World"
+pwd
+echo $?
+
+
