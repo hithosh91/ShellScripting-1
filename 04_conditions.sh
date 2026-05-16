@@ -96,3 +96,50 @@ else
     echo "name is null"
 fi
 
+# file condition operators
+# -e : file exists
+# -f : file is a regular file
+# -d : file is a directory
+# -r : file is readable
+# -w : file is writable
+# -x : file is executable       
+
+
+# check whether a file exists or not
+
+file="test.txt"
+if[-e "$file"] then
+    echo "file exists"
+else
+    echo "file does not exist"
+fi
+
+#check whether a file is a regular file or a directory
+
+if[-f "$file"] then
+    echo "file is a regular file"
+elif[-d "$file"] then
+    echo "file is a directory"
+else
+    echo "file is neither a regular file nor a directory"
+fi
+
+#check whether a file is readable, writable or executable
+if[-r "$file"] then
+    echo "file is readable"
+else
+    echo "file is not readable"
+fi
+
+if[-w "$file"] then
+    echo "file is writable"
+else
+    echo "file is not writable"
+fi
+
+if[-x "$file"] then
+    echo "file is executable"
+else
+    echo "file is not executable"
+fi
+
